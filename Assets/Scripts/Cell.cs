@@ -3,7 +3,9 @@ using UnityEngine;
 namespace Mechanics {
     public class Cell : MonoBehaviour
     {
+        [SerializeField]
         private Coordinates coordinates;
+
         private bool areCoordinatesInitialized = false;
         public void InitializeCoordinates(Coordinates inputCoordinates)
         {
@@ -18,12 +20,18 @@ namespace Mechanics {
             }
         }
 
-        public void DigUpOrPick()
+        private void OnMouseDown()
         {
-            
+            print("LBM");
+            DigUpOrPick();
         }
 
-        public Coordinates GetCoordinates()
+        private void DigUpOrPick()
+        {
+            //HERE !!!!!!!!!
+        }
+
+        private Coordinates GetCoordinates()
         {
             return coordinates;
         }

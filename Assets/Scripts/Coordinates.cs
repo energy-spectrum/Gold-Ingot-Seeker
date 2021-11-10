@@ -1,5 +1,6 @@
 ﻿namespace Mechanics
 {
+    [System.Serializable]
     public struct Coordinates
     {
         override public string ToString()

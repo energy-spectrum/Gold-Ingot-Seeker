@@ -3,15 +3,24 @@ using UnityEngine.UI;
 
 public class Play : MonoBehaviour
 {
+    public Mechanics.Field inputField;
+    static private Mechanics.Field field;
+
     public GameObject parametersPanel;
     public InputField inputField_N, inputField_M, inputField_H, inputField_K;
 
     private int inputN, inputM, inputH, inputK;
     public void PlayGame()
     {
+        if (inputField != null)
+        {
+            field = inputField;
+        }
+
         InitializeParameters();
 
         //СоздатьПоле(inputN, inputM, inputH, inputK);
+        field.Create(inputN, inputM, inputH, inputK);
 
         Destroy(parametersPanel);
     }
