@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8098185462032488620}
   - component: {fileID: 8664137491948191144}
   - component: {fileID: 5108991530187264849}
+  - component: {fileID: 3861373968181836755}
   - component: {fileID: -7990063020481655748}
   m_Layer: 0
   m_Name: Cell
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3529412, g: 1, b: 0.003921569, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96,9 +97,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e29e2a85bd069488542759ec08a89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldIngotPrefab: {fileID: 2568470597398479628, guid: 63b1e259bdc3191499bb9355471a23d6, type: 3}
   coordinates:
     x: 0
     y: 0
+    z: 0
+--- !u!114 &3861373968181836755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4438577290145326988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58893b5f5e181c41ab44d2aef52e369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &-7990063020481655748
 BoxCollider2D:
   m_ObjectHideFlags: 0

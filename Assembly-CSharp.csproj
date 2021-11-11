@@ -54,10 +54,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\UI\Exite.cs" />
-    <Compile Include="Assets\Scripts\UI\Play.cs" />
+    <Compile Include="Assets\Scripts\GameState.cs" />
     <Compile Include="Assets\Scripts\Field.cs" />
-    <Compile Include="Assets\Scripts\Cell.cs" />
+    <Compile Include="Assets\Scripts\TouchHandler.cs" />
+    <Compile Include="Assets\Scripts\UI\Play.cs" />
     <Compile Include="Assets\Scripts\Coordinates.cs" />
+    <Compile Include="Assets\Scripts\Cell.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -16,6 +16,8 @@ public class Play : MonoBehaviour
         {
             field = inputField;
         }
+        //Очищаем поле
+        field.Clear();
 
         InitializeParameters();
 
