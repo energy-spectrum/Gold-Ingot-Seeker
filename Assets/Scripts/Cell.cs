@@ -41,7 +41,13 @@ namespace Mechanics {
         //A function that determines what to do: dig or collect a reward
         public void DigUpOrPick()
         {
-            if (Field.getCoordinatesOfAwards.Contains(coordinates))
+            if (gameIsOver)
+            {
+                return;
+            }
+
+                
+                if (Field.getCoordinatesOfAwards.Contains(coordinates))
             {
                 Pick();
                 return;
